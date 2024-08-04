@@ -1,0 +1,7 @@
+# Ignores tasks.json
+tasks.json
+
+# Ignore files with extension `.class` & `.exe`
+*.class
+*.exe
+
