@@ -1,6 +1,6 @@
 # Ignores tasks.json
 tasks.json
-
+.gitattributes
 # Ignore files with extension `.class` & `.exe`
 *.class
 *.exe
