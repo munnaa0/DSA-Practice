@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 int Index; //Made global so it can be accessed from other functions
+
+// This function does the insertion process
 void insert(int *p,int position,int number){
     int i;
     ///Shifting elements by one index ahead
