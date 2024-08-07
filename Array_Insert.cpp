@@ -22,7 +22,9 @@ int main(){
     cin >> size;
     cout << "How many numbers: ";
     cin >> Index;
+    // Creating that many space in heap memory
     p = new int[size];
+
     cout << "Enter " << Index << " Numbers: ";
     ///Array initial input
     for(int i = 0;i<Index;i++){
