@@ -5,5 +5,6 @@ void print(string name){
 }
 
 int main(){
+    //Calling print function
     print("Munna");
 }
