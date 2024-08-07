@@ -11,6 +11,7 @@ void insert(int *p,int position,int number){
     }
     // After it reached the index it enters the value to that index
     p[position-1] = number;
+    // Incrementing index cause the elements increased by 1
     Index++;
 }
 
