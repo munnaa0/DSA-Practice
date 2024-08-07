@@ -30,7 +30,9 @@ int main(){
     for(int i = 0;i<Index;i++){
         cin >> p[i];
     }
+    // Calling the insert function to do the insertion
     insert(p,3,30);
+
     // Array Output
     for(int i = 0;i<Index;i++){
         cout << p[i] << " ";
