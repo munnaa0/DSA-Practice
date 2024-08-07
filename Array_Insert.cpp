@@ -9,6 +9,7 @@ void insert(int *p,int position,int number){
     for(i=Index;i>=position;i-- ){
         p[i] = p[i-1];
     }
+    // After it reached the index it enters the value to that index
     p[position-1] = number;
     Index++;
 }
