@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
+int n;
 
 int LinearSearch(int *p,int key){
-    int n = sizeof(p) / sizeof(int);
-    
+
     for(int i=0;i<n;i++){
         if(p[i]==key)
-            return key;
+            return i;
     }
     return -1;
 }
@@ -14,6 +14,7 @@ int LinearSearch(int *p,int key){
 int main(){
     int key;
     int arr[10] = {10,20,30,40,50,60,70,80,90,100};
+    n = sizeof(arr) / sizeof(int);
     cout << "Enter an element to search: ";
     cin >> key;
 
