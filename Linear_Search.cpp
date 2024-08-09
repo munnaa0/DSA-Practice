@@ -3,6 +3,7 @@ using namespace std;
 
 int LinearSearch(int *p,int key){
     int n = sizeof(p) / sizeof(int);
+    
     for(int i=0;i<n;i++){
         if(p[i]==key)
             return key;
