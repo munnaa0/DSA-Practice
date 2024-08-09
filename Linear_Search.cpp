@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 
+int LinearSearch(int *p,int index){
+    for(int i=0;i<p.size();i++){
+        
+    }
+}
 
 int main(){
     int key;
@@ -8,7 +13,7 @@ int main(){
     cout << "Enter an element to search: ";
     cin >> key;
 
-    int index = LinearSearch(key);
+    int index = LinearSearch(arr,key);
     if(index == -1)
         cout << key << " " << "is not present in the array!!" << endl;
     else
