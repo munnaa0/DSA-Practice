@@ -9,5 +9,8 @@ int main(){
     cin >> key;
 
     int index = LinearSearch(key);
-    
+    if(index == -1)
+        cout << key << " " << "is not present in the array!!" << endl;
+    else
+        cout << key << " " << "Found at index " << index << endl;
 }
