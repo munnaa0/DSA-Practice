@@ -2,8 +2,9 @@
 using namespace std;
 
 int LinearSearch(int *p,int index){
-    for(int i=0;i<p.size();i++){
-        
+    int n
+    for(int i=0;i<n;i++){
+
     }
 }
 
