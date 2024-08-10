@@ -2,20 +2,23 @@
 using namespace std;
 int n;
 
-int LinearSearch(int *p,int key){
-
-    for(int i=0;i<n;i++){
-        if(p[i]==key)
-            return i;
-    }
-    return -1;
-}
-
-void swap(int *p,int i){
+void swapping(int *p,int i){
     int temp;
     temp = p[0];
     p[0] = p[i];
     p[i] = temp;
+}
+
+int LinearSearch(int *p,int key){
+
+    for(int i=0;i<n;i++){
+        if(p[i]==key){
+            swapping(p,i);///After finding it swaps the key with first element
+            return 0;
+        }
+            
+    }
+    return -1;
 }
 
 int main(){
@@ -30,4 +33,9 @@ int main(){
         cout << key << " " << "is not present in the array!!" << endl;
     else
         cout << key << " " << "Found at index " << index << endl;
+
+    ///Printing Array
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
 }
