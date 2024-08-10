@@ -11,6 +11,13 @@ int LinearSearch(int *p,int key){
     return -1;
 }
 
+void swap(int *p,int i){
+    int temp;
+    temp = p[0];
+    p[0] = p[i];
+    p[i] = temp;
+}
+
 int main(){
      int key;
     int arr[10] = {10,20,30,40,50,60,70,80,90,100};
