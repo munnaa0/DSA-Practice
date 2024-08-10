@@ -10,10 +10,10 @@ int binarySearch(int low,int high,int key){
             return mid;
         }
         else if(key > p[mid]){
-            binarySearch(mid+1,high,key);
+           return binarySearch(mid+1,high,key);
         }
         else{
-            binarySearch(low,mid-1,key);
+           return binarySearch(low,mid-1,key);
         }
     }
     return -1;
