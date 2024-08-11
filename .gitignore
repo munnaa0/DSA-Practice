@@ -1,4 +1,5 @@
 # Ignores tasks.json
+.gitignore
 tasks.json
 .gitattributes
 # Ignore files with extension `.class` & `.exe`
