@@ -12,8 +12,7 @@ int main(){
         cout << endl;
 
 
-    //LeftShift(Arr,n);
-    RightShift(Arr,n);
+
 
     cout << "After Shifting ";
     for(i=0;i<n;i++)
