@@ -1,29 +1,39 @@
 #include<iostream>
 using namespace std;
 
-void insert(int *p,int n,int key){
-    while(key < p[n-1]){
-        p[n] = p[n-1];
-        n--;
+int insert(int *p, int n, int key) {
+    int i = n - 1;
+    while (i >= 0 && key < p[i]) {
+        p[i + 1] = p[i];
+        i--;
     }
-    p[n] = key;
+    p[i + 1] = key;
+    return n + 1; 
 }
 
-int main(){
+int main() {
     int i;
-    int Arr[] ={12,18,24,27,31,39,45,67,71};
-    int n = sizeof(Arr) / sizeof(int);
+    int *Arr = new int[15]; 
 
-    cout << "Before Inserting ";
-    for(i=0;i<n;i++)
+    int initialArr[] = {12, 18, 24, 27, 31, 39, 45, 67, 71};
+    int length = 9;
+
+    for (i = 0; i < length; i++) {
+        Arr[i] = initialArr[i];
+    }
+
+    cout << "Before Inserting: ";
+    for (i = 0; i < length; i++)
         cout << Arr[i] << " ";
-        cout << endl;
+    cout << endl;
 
-    insert(Arr,n,35);
+    length = insert(Arr, length, 35);
 
-
-    cout << "After Inserting ";
-    for(i=0;i<n;i++)
+    cout << "After Inserting: ";
+    for (i = 0; i < length; i++)
         cout << Arr[i] << " ";
-        cout << endl;
+    cout << endl;
+
+    delete[] Arr;
+    return 0;
 }
