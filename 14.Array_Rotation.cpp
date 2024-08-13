@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void LeftShift(int *p,int n){
+void LeftRotate(int *p,int n){
     int i,temp;
     for(i=0;i<n-1;i++){
         p[i] = p[i+1];
@@ -9,7 +9,7 @@ void LeftShift(int *p,int n){
     p[n-1] = 0;
 }
 
-void RightShift(int *p,int n){
+void RightRotate(int *p,int n){
     int i,temp;
     for(i=n-1;i>0;i--){
         p[i] = p[i-1];
