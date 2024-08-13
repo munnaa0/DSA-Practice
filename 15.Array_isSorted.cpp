@@ -9,6 +9,11 @@ void display(int *Arr,int length){
 
 int isSorted(int *p,int length){
 
+    for(int i = 0; i<length; i++){
+        if(p[i] > p[i+1])
+            return 0;
+    }
+    return 1;
 }
 
 int main() {
