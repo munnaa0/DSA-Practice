@@ -21,6 +21,5 @@ int main() {
         cout << Arr[i] << " ";
     cout << endl;
 
-    delete[] Arr;
     return 0;
 }
