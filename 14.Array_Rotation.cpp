@@ -14,8 +14,8 @@ int main(){
         cout << endl;
 
 
-    //LeftShift(Arr,n);
-    RightShift(Arr,n);
+    //LeftRotate(Arr,n);
+    RightRotate(Arr,n);
 
     cout << "After Rotating ";
     for(i=0;i<n;i++)
