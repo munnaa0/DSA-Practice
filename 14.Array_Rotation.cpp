@@ -28,8 +28,8 @@ int main(){
         cout << endl;
 
 
-    //LeftRotate(Arr,n);
-    //RightRotate(Arr,n);
+    LeftRotate(Arr,n);
+    RightRotate(Arr,n);
 
     cout << "After Rotating ";
     for(i=0;i<n;i++)
