@@ -1,7 +1,11 @@
 #include<iostream>
 using namespace std;
 
-
+void display(){
+    for (i = 0; i < length; i++)
+        cout << Arr[i] << " ";
+    cout << endl;
+}
 
 int main() {
     int i;
@@ -10,16 +14,12 @@ int main() {
     int length = 9;
 
     cout << "Before Inserting: ";
-    for (i = 0; i < length; i++)
-        cout << Arr[i] << " ";
-    cout << endl;
+    display(Arr,length);
 
     length = insert(Arr, length, 35);
 
     cout << "After Inserting: ";
-    for (i = 0; i < length; i++)
-        cout << Arr[i] << " ";
-    cout << endl;
+    display(Arr,length);
 
     return 0;
 }
