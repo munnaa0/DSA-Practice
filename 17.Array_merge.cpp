@@ -8,24 +8,20 @@ void display(int *p,int n){
     cout << endl;
 }
 
-void merge(int *Arr1, int *Arr2, int *Arr3, int Arr1Length,int Arr2Length) {
-    int i = 0, j = 0, k = 0;
-
-    while (i < Arr1Length && j < Arr2Length) {
-        if (Arr1[i] < Arr2[j]) {
+void merge(int *Arr1,int *Arr2,int *Arr3,int Arr1Length,int Arr2Length){
+    int i=0,j=0,k=0;
+    while(i<Arr1Length && j<Arr2Length){
+        if(Arr1[i] < Arr2[j])
             Arr3[k++] = Arr1[i++];
-        } else {
+        else
             Arr3[k++] = Arr2[j++];
-        }
     }
-
-    while (i < Arr1Length) {
+    ///For copying last element
+    while(i<Arr1Length)
         Arr3[k++] = Arr1[i++];
-    }
 
-    while (j < Arr2Length) {
+    while(j<Arr2Length)
         Arr3[k++] = Arr2[j++];
-    }
 }
 
 
