@@ -2,25 +2,32 @@
 using namespace std;
 
 void display(int *p,int n){
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n;i++){
         cout << p[i] << " ";
     }
     cout << endl;
 }
 
-void merge(int *Arr1,int *Arr2,int *Arr3,int Arr3Length){
-    int i=0,j=0,k=0;
-    while (k<Arr3Length){
-        if(Arr1[i] < Arr2[j]){
-            Arr3[k] = Arr1[i];
-            i++;
-            k++;
-            Arr3[k] = Arr2[j];
-            j++;
-            k++;
+void merge(int *Arr1, int *Arr2, int *Arr3, int Arr1Length,int Arr2Length) {
+    int i = 0, j = 0, k = 0;
+
+    while (i < Arr1Length && j < Arr2Length) {
+        if (Arr1[i] < Arr2[j]) {
+            Arr3[k++] = Arr1[i++];
+        } else {
+            Arr3[k++] = Arr2[j++];
         }
     }
+
+    while (i < Arr1Length) {
+        Arr3[k++] = Arr1[i++];
+    }
+
+    while (j < Arr2Length) {
+        Arr3[k++] = Arr2[j++];
+    }
 }
+
 
 int main(){
     int Arr1[] = {1,3,5,7,9};
@@ -31,9 +38,8 @@ int main(){
 
     int Arr3Length = Arr1Length + Arr2Length;
     int Arr3[Arr3Length];
-    int Arr3Size = 0;
 
-    merge(Arr1,Arr2,Arr3,Arr3Length);
+    merge(Arr1,Arr2,Arr3,Arr1Length,Arr2Length);
 
     display(Arr3,Arr3Length);
 
