@@ -7,7 +7,7 @@ void display(int *p,int n){
     }
     cout << endl;
 }
-//dddsss
+
 void merge(int *Arr1,int *Arr2,int *Arr3,int Arr1Length,int Arr2Length){
     int i=0,j=0,k=0;
     while(i<Arr1Length && j<Arr2Length){
