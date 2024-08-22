@@ -17,3 +17,8 @@ cout << "Enter " << Size << " Elements: ";
     {
         cout << "Overflow" ;
     }
+     else{
+        cout << "Enter the element you want to update with: ";
+        cin >> item;
+
+        Arr[k-1] = item;
