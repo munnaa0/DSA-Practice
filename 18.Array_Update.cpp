@@ -5,3 +5,8 @@ int main(){
     cout << "Enter Array Size: ";
     cin >> Size;
     int Arr[Size];
+cout << "Enter " << Size << " Elements: ";
+    for(i=0; i<Size; i++)
+    {
+        cin >>Arr[i];
+    }
