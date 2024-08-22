@@ -10,3 +10,10 @@ cout << "Enter " << Size << " Elements: ";
     {
         cin >>Arr[i];
     }
+     cout << "Enter the position you want to Update: ";
+    cin >> k;
+
+    if(k<=0 || k>Size-1)
+    {
+        cout << "Overflow" ;
+    }
