@@ -22,3 +22,9 @@ cout << "Enter " << Size << " Elements: ";
         cin >> item;
 
         Arr[k-1] = item;
+          for(i=0;i<Size;i++){
+            cout << Arr[i] << " ";
+        }
+    }
+
+}
